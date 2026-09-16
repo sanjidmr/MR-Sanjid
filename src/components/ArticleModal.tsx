@@ -136,7 +136,7 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ post, onClose }) => 
               <div>
                 <div className="text-sm font-bold text-[#111111]">Sanjid</div>
                 <div className="text-xs text-[#777777] font-mono-code">
-                  Founder of Next Solution · Web Developer
+                  Founder of Next Solution MYM · Web Developer
                 </div>
               </div>
             </div>

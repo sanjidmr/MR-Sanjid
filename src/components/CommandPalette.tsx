@@ -169,7 +169,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
             >
               <div className="flex items-center gap-2.5">
                 <Globe className="w-4 h-4 text-[#FF5722] shrink-0" />
-                <span className="font-semibold">Visit Next Solution Platform</span>
+                <span className="font-semibold">Visit Next Solution MYM Platform</span>
               </div>
               <ExternalLink className="w-3.5 h-3.5 text-[#777777] shrink-0" />
             </a>

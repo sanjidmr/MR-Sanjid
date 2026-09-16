@@ -2,16 +2,10 @@ import React, { useState } from 'react';
 import {
   ArrowUpRight,
   Globe,
-  Bot,
   Sparkles,
-  TrendingUp,
   Layout,
-  Video,
-  Palette,
   Search,
-  CheckCircle2,
   Workflow,
-  Shield,
   Layers,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -34,40 +28,28 @@ export const FounderSection: React.FC = () => {
       description: 'Bespoke design systems, wireframes, and high-fidelity prototypes built for intuitive user flow.',
     },
     {
-      title: 'AI Automation & Agents',
-      category: 'Intelligence',
-      icon: Bot,
-      description: 'Custom AI workflows, automated client intake, LLM integrations, and process optimization.',
+      title: 'High-Conversion Landing Pages',
+      category: 'Conversion',
+      icon: Sparkles,
+      description: 'Persuasive landing pages engineered to turn visitors into qualified leads and customers.',
     },
     {
-      title: 'SEO & Search Growth',
+      title: 'Web Apps & Dashboards',
+      category: 'Applications',
+      icon: Workflow,
+      description: 'Interactive SaaS frontends, client portals, and admin systems with clean data visualization.',
+    },
+    {
+      title: 'E-Commerce Storefronts',
+      category: 'Commerce',
+      icon: Layers,
+      description: 'Fast, scalable storefronts with instant filtering, smooth carts, and streamlined checkout.',
+    },
+    {
+      title: 'SEO & Speed Optimization',
       category: 'Visibility',
       icon: Search,
-      description: 'Technical SEO audits, semantic schema, speed optimization, and on-page search visibility strategies.',
-    },
-    {
-      title: 'Digital Marketing & Strategy',
-      category: 'Growth',
-      icon: TrendingUp,
-      description: 'Conversion rate optimization (CRO), funnel architecture, and targeted digital positioning.',
-    },
-    {
-      title: 'Graphic Design & Branding',
-      category: 'Identity',
-      icon: Palette,
-      description: 'Cohesive visual brand identities, vector assets, typography suites, and marketing collateral.',
-    },
-    {
-      title: 'Video Editing & Motion',
-      category: 'Media',
-      icon: Video,
-      description: 'Engaging product launch videos, micro-animations, social media cuts, and motion graphics.',
-    },
-    {
-      title: 'Custom Digital Solutions',
-      category: 'End-to-End',
-      icon: Workflow,
-      description: 'End-to-end consulting, API integrations, and tailored digital transformations for business needs.',
+      description: 'Technical SEO audits, semantic schema, and performance tuning for 95+ Core Web Vitals.',
     },
   ];
 
@@ -91,7 +73,7 @@ export const FounderSection: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-[#FF5722]"></span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] font-display tracking-tight leading-tight">
-              Building Next Solution. <br />
+              Building Next Solution MYM. <br />
               <span className="text-[#666666]">Digital solutions for modern businesses.</span>
             </h2>
           </div>
@@ -129,7 +111,7 @@ export const FounderSection: React.FC = () => {
                 Too many businesses struggle with the traditional agency runaround: excessive overhead, junior handoffs, and disjointed handshakes between design, code, and marketing.
               </p>
               <p>
-                At Next Solution, we operate with a builder-first philosophy. We bring technical execution, brand aesthetics, and modern AI automation under one roof — helping founders and businesses launch with speed and authority.
+                At Next Solution MYM, we operate with a builder-first philosophy. We bring technical execution, brand aesthetics, and modern web engineering under one roof — helping founders and businesses launch with speed and authority.
               </p>
             </div>
 
@@ -144,7 +126,7 @@ export const FounderSection: React.FC = () => {
                 </span>
                 <span className="text-[#FF5722]">➔</span>
                 <span className="px-2.5 py-1 bg-[#111111] text-white rounded-md font-semibold text-[11px] sm:text-xs">
-                  Next Solution
+                  Next Solution MYM
                 </span>
                 <span className="text-[#FF5722]">➔</span>
                 <span className="px-2.5 py-1 bg-[#FFF1EC] text-[#FF5722] border border-[#FFCCBC] rounded-md font-semibold text-[11px] sm:text-xs">
@@ -163,7 +145,7 @@ export const FounderSection: React.FC = () => {
                 id="founder-visit-next-solution"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#FF5722] hover:bg-[#E64A19] text-white text-sm font-semibold rounded-xl transition-all shadow-xs hover:shadow-sm min-h-[44px]"
               >
-                <span>Visit Next Solution</span>
+                <span>Visit Next Solution MYM</span>
                 <ArrowUpRight className="w-4 h-4" />
               </motion.a>
 
@@ -190,10 +172,10 @@ export const FounderSection: React.FC = () => {
               <div className="flex items-center justify-between pb-3 border-b border-[#EFECE6]">
                 <div className="flex items-center gap-2 font-mono-code text-xs text-[#111111] font-semibold uppercase">
                   <Layers className="w-4 h-4 text-[#FF5722]" />
-                  <span>Next Solution Service Spectrum</span>
+                  <span>Next Solution MYM Service Spectrum</span>
                 </div>
                 <span className="text-[11px] font-mono-code text-[#777777]">
-                  8 Core Capabilities
+                  6 Core Capabilities
                 </span>
               </div>
 

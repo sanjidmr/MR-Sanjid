@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Linkedin, Globe, Mail, Heart } from 'lucide-react';
+import { ArrowUp, Github, Linkedin, Facebook, Globe, Mail } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export const Footer: React.FC = () => {
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[#555555] max-w-sm leading-relaxed">
-              Web Developer & Founder of Next Solution. Crafting modern, high-performance websites and digital products for ambitious brands worldwide.
+              Web Developer & Founder of Next Solution MYM. Crafting modern, high-performance websites and digital products for ambitious brands worldwide.
             </p>
             <div className="text-xs font-mono-code text-[#777777] pt-1">
               Available for selected client projects & partnerships.
@@ -83,11 +83,20 @@ export const Footer: React.FC = () => {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
+                href={personalInfo.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 text-[#555555] hover:text-[#1877F2] hover:bg-[#FAF9F6] border border-[#E8E6E1] rounded-lg transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                title="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a
                 href={personalInfo.companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 text-[#555555] hover:text-[#111111] bg-[#FAF9F6] border border-[#E8E6E1] rounded-lg transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-                title="Next Solution Agency"
+                title="Next Solution MYM"
               >
                 <Globe className="w-4 h-4" />
               </a>

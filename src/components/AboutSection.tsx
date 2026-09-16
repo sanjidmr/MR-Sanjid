@@ -27,7 +27,7 @@ export const AboutSection: React.FC = () => {
       icon: HeartHandshake,
       title: 'Radical Accountability & Founder Care',
       description:
-        'Whether building as an independent developer or through Next Solution, I take full ownership of timelines, code quality, and client outcomes.',
+        'Whether building as an independent developer or through Next Solution MYM, I take full ownership of timelines, code quality, and client outcomes.',
     },
   ];
 
@@ -75,7 +75,7 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <p>
-              Starting <strong className="text-[#111111] font-semibold">Next Solution</strong> was the natural evolution of this mindset. I wanted to build a company capable of taking a founder's raw vision and turning it into a complete digital ecosystem — covering web engineering, UI/UX systems, SEO, and AI automation.
+              Starting <strong className="text-[#111111] font-semibold">Next Solution MYM</strong> was the natural evolution of this mindset. I wanted to build a company capable of taking a founder's raw vision and turning it into a complete digital ecosystem — covering web engineering, UI/UX systems, and SEO.
             </p>
 
             {/* Quote block */}
@@ -92,7 +92,7 @@ export const AboutSection: React.FC = () => {
             </motion.div>
 
             <p className="text-sm sm:text-base text-[#555555]">
-              Today, I split my time between engineering high-speed frontends for forward-thinking clients and growing Next Solution. I am constantly learning, refining my craft, and collaborating with people who care about quality as much as I do.
+              Today, I split my time between engineering high-speed frontends for forward-thinking clients and growing Next Solution MYM. I am constantly learning, refining my craft, and collaborating with people who care about quality as much as I do.
             </p>
           </motion.div>
 
@@ -141,7 +141,7 @@ export const AboutSection: React.FC = () => {
               className="inline-flex items-center justify-between w-full p-4 bg-[#111111] hover:bg-[#FF5722] text-white rounded-xl transition-all shadow-xs group min-h-[44px]"
             >
               <span className="text-xs font-semibold">
-                Explore the Next Solution Story
+                Explore the Next Solution MYM Story
               </span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </motion.a>

@@ -25,7 +25,7 @@ export const WritingSection: React.FC = () => {
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] font-display tracking-tight leading-tight">
               Thoughts on craft. <br />
-              <span className="text-[#666666]">Engineering & building Next Solution.</span>
+              <span className="text-[#666666]">Engineering & building Next Solution MYM.</span>
             </h2>
           </div>
           <div className="max-w-md text-sm text-[#555555] leading-relaxed">

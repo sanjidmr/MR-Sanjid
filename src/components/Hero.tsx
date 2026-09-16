@@ -120,7 +120,7 @@ export const Hero: React.FC = () => {
               DHAKA / {liveTime ? liveTime : 'GMT+6'}
             </span>
             <span className="hidden md:inline">·</span>
-            <span className="text-[#111111] font-medium">NEXT SOLUTION / FOUNDER</span>
+            <span className="text-[#111111] font-medium">NEXT SOLUTION MYM / FOUNDER</span>
           </div>
         </motion.div>
 
@@ -158,7 +158,7 @@ export const Hero: React.FC = () => {
                 href="#founder"
                 className="font-semibold text-[#111111] underline decoration-[#FF5722] decoration-2 underline-offset-4 hover:text-[#FF5722] transition-colors"
               >
-                Next Solution
+                Next Solution MYM
               </a>
               . I engineer modern, high-performance websites, user interfaces, and digital products with a relentless focus on usability, speed, and tangible business impact.
             </motion.p>
@@ -236,7 +236,7 @@ export const Hero: React.FC = () => {
                   Company
                 </div>
                 <div className="text-sm font-semibold text-[#111111] mt-0.5">
-                  Next Solution Founder
+                  Next Solution MYM Founder
                 </div>
               </div>
               <div className="col-span-2 sm:col-span-1 p-3 bg-white/60 backdrop-blur-xs border border-[#E8E6E1] rounded-xl">

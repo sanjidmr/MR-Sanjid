@@ -127,11 +127,22 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
 
             {/* Visual representation */}
             <div className="pt-2">
-              <ProjectMockup
-                type={project.thumbnailSvg}
-                accentColor={project.accentColor}
-                title={project.title}
-              />
+              {project.image ? (
+                <div className="rounded-2xl overflow-hidden border border-[#E8E6E1] shadow-sm">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <ProjectMockup
+                  type={project.thumbnailSvg}
+                  accentColor={project.accentColor}
+                  title={project.title}
+                />
+              )}
             </div>
           </div>
 

@@ -23,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 30);
 
-      const sections = ['hero', 'about', 'founder', 'work', 'services', 'skills', 'experience', 'writing', 'contact'];
+      const sections = ['hero', 'about', 'work', 'services', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -45,12 +45,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
   const navLinks = [
     { name: 'About', href: '#about', id: 'about' },
-    { name: 'Founder', href: '#founder', id: 'founder' },
     { name: 'Work', href: '#work', id: 'work' },
     { name: 'Services', href: '#services', id: 'services' },
-    { name: 'Skills', href: '#skills', id: 'skills' },
-    { name: 'Journey', href: '#experience', id: 'experience' },
-    { name: 'Writing', href: '#writing', id: 'writing' },
+    { name: 'Contact', href: '#contact', id: 'contact' },
   ];
 
   return (
@@ -87,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" title="Available for projects"></span>
               </span>
               <span className="text-[10px] text-[#777777] font-medium tracking-tight">
-                Founder · Next Solution
+                Founder · Next Solution MYM
               </span>
             </div>
           </motion.a>

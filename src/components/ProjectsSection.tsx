@@ -1,31 +1,9 @@
-import React, { useState } from 'react';
-import { ArrowUpRight, Github, Sparkles, Filter, Code2, Layers } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Project } from '../types/portfolio';
+import React from 'react';
+import { ArrowUpRight, ExternalLink } from 'lucide-react';
+import { motion } from 'motion/react';
 import { projects } from '../data/portfolioData';
-import { ProjectMockup } from './ProjectMockup';
 
-interface ProjectsSectionProps {
-  onOpenCaseStudy: (project: Project) => void;
-}
-
-export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onOpenCaseStudy }) => {
-  const [selectedFilter, setSelectedFilter] = useState<string>('all');
-
-  const filterOptions = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'E-Commerce Platform', label: 'E-Commerce' },
-    { id: 'Hospitality & Culinary Platform', label: 'Hospitality' },
-    { id: 'Digital Agency Platform', label: 'Agency & Brands' },
-    { id: 'Web Application & Admin System', label: 'SaaS & Dashboards' },
-    { id: 'High-Conversion Landing Page', label: 'Landing Pages' },
-  ];
-
-  const filteredProjects =
-    selectedFilter === 'all'
-      ? projects
-      : projects.filter((p) => p.category === selectedFilter);
-
+export const ProjectsSection: React.FC = () => {
   return (
     <section id="work" className="py-16 sm:py-24 border-t border-[#E8E6E1] bg-[#FAF9F6] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +18,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onOpenCaseStud
           <div className="space-y-2">
             <div className="font-mono-code text-xs font-semibold text-[#FF5722] tracking-wider uppercase flex items-center gap-2">
               <span>/ 03 · SELECTED WORK</span>
-              <span className="text-[#999999]">// {projects.length} CASE STUDIES</span>
+              <span className="text-[#999999]">// {projects.length} PROJECTS</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] font-display tracking-tight leading-tight">
               Crafted with purpose. <br />
@@ -48,167 +26,107 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onOpenCaseStud
             </h2>
           </div>
           <div className="max-w-md text-sm text-[#555555] leading-relaxed">
-            A curated selection of client projects, platforms, and digital products. Each piece represents a deliberate balance of aesthetic restraint and frontend speed.
+            A curated selection of design and development projects — each representing a deliberate balance of aesthetic clarity and frontend speed.
           </div>
         </motion.div>
 
-        {/* Filter Pills */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-          className="pt-6 sm:pt-8 pb-6 sm:pb-10 flex flex-wrap items-center gap-2"
-        >
-          {filterOptions.map((filter) => {
-            const isActive = selectedFilter === filter.id;
-            return (
-              <motion.button
-                key={filter.id}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                onClick={() => setSelectedFilter(filter.id)}
-                id={`filter-btn-${filter.id}`}
-                className={`px-3.5 py-2 rounded-full text-xs font-medium transition-all min-h-[38px] flex items-center justify-center ${
-                  isActive
-                    ? 'bg-[#111111] text-white shadow-xs'
-                    : 'bg-white border border-[#E8E6E1] text-[#555555] hover:text-[#111111] hover:border-[#CCCCCC]'
-                }`}
-              >
-                {filter.label}
-              </motion.button>
-            );
-          })}
-        </motion.div>
+        {/* Projects Grid */}
+        <div className="pt-8 sm:pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {projects.map((project, index) => (
+            <motion.a
+              key={project.id}
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.45, delay: index * 0.08 }}
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              className="group bg-white border border-[#E8E6E1] rounded-2xl overflow-hidden hover:border-[#FF5722]/60 hover:shadow-md transition-all cursor-pointer flex flex-col"
+            >
+              {/* Project Image */}
+              <div className="relative overflow-hidden aspect-[16/10] bg-[#F5F4F0]">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out"
+                  loading="lazy"
+                />
+                <div className="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 bg-white/90 backdrop-blur-md border border-[#E8E6E1] rounded-lg text-[10px] font-mono-code font-semibold text-[#555555] group-hover:bg-[#FF5722] group-hover:text-white group-hover:border-[#FF5722] transition-all">
+                  <span>Visit Live</span>
+                  <ExternalLink className="w-3 h-3" />
+                </div>
+              </div>
 
-        {/* Projects Showcase: Editorial asymmetric layout */}
-        <div className="space-y-10 sm:space-y-16">
-          <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project, index) => {
-              const isEven = index % 2 === 0;
-              return (
-                <motion.div
-                  key={project.id}
-                  layout
-                  initial={{ opacity: 0, y: 28 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-50px' }}
-                  exit={{ opacity: 0, scale: 0.96 }}
-                  transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  id={`project-card-${project.id}`}
-                  className="bg-white border border-[#E8E6E1] rounded-2xl p-4 sm:p-8 hover:border-[#D1CEC7] transition-all shadow-xs hover:shadow-md group"
-                >
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
-                    {/* Visual column */}
-                    <div className={`lg:col-span-6 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                      <motion.div
-                        whileHover={{ scale: 1.015 }}
-                        transition={{ duration: 0.25 }}
-                        onClick={() => onOpenCaseStudy(project)}
-                        className="cursor-pointer overflow-hidden rounded-xl shadow-2xs"
-                      >
-                        <ProjectMockup
-                          type={project.thumbnailSvg}
-                          accentColor={project.accentColor}
-                          title={project.title}
-                        />
-                      </motion.div>
-                    </div>
+              {/* Card Content */}
+              <div className="p-4 sm:p-5 flex flex-col flex-1 space-y-3">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-mono-code text-[10px] font-bold uppercase px-2 py-0.5 bg-[#FAF9F6] border border-[#E8E6E1] text-[#FF5722] rounded">
+                    {project.category}
+                  </span>
+                  <span className="font-mono-code text-[11px] text-[#999999]">
+                    {project.year}
+                  </span>
+                </div>
 
-                    {/* Content column */}
-                    <div
-                      className={`lg:col-span-6 space-y-4 sm:space-y-5 ${
-                        isEven ? 'lg:order-2' : 'lg:order-1'
-                      }`}
+                <h3 className="text-lg sm:text-xl font-extrabold text-[#111111] group-hover:text-[#FF5722] transition-colors font-display leading-tight">
+                  {project.title}
+                </h3>
+
+                <p className="text-xs sm:text-sm text-[#666666] leading-relaxed line-clamp-2">
+                  {project.tagline}
+                </p>
+
+                <div className="flex flex-wrap gap-1.5 pt-1">
+                  {project.technologies.slice(0, 4).map((tech) => (
+                    <span
+                      key={tech}
+                      className="font-mono-code text-[10px] px-2 py-0.5 bg-[#FAF9F6] border border-[#E8E6E1] text-[#555555] rounded font-medium"
                     >
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-mono-code text-[11px] font-bold uppercase px-2.5 py-0.5 bg-[#FAF9F6] border border-[#E8E6E1] text-[#FF5722] rounded">
-                          {project.category}
-                        </span>
-                        <span className="font-mono-code text-xs text-[#888888]">
-                          · {project.year}
-                        </span>
-                        <span className="font-mono-code text-xs text-[#888888]">
-                          · {project.role}
-                        </span>
-                      </div>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
-                      <div className="space-y-1.5 sm:space-y-2">
-                        <h3
-                          onClick={() => onOpenCaseStudy(project)}
-                          className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#111111] group-hover:text-[#FF5722] transition-colors cursor-pointer font-display"
-                        >
-                          {project.title}
-                        </h3>
-                        <p className="text-xs sm:text-sm font-medium text-[#444444] leading-snug">
-                          {project.tagline}
-                        </p>
-                      </div>
-
-                      <p className="text-xs sm:text-sm text-[#666666] leading-relaxed">
-                        {project.description}
-                      </p>
-
-                      {/* Technologies */}
-                      <div className="flex flex-wrap gap-1.5 pt-1">
-                        {project.technologies.map((tech) => (
-                          <span
-                            key={tech}
-                            className="font-mono-code text-[11px] px-2.5 py-1 bg-[#FAF9F6] border border-[#E8E6E1] text-[#333333] rounded-md font-medium"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-
-                      {/* Actions */}
-                      <div className="pt-2 sm:pt-3 flex flex-wrap items-center gap-2.5 sm:gap-3">
-                        <motion.button
-                          whileHover={{ scale: 1.02 }}
-                          whileTap={{ scale: 0.98 }}
-                          onClick={() => onOpenCaseStudy(project)}
-                          id={`btn-case-study-${project.id}`}
-                          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#111111] hover:bg-[#FF5722] text-white text-xs font-semibold rounded-lg transition-colors shadow-2xs min-h-[42px]"
-                        >
-                          <span>Read Case Study</span>
-                          <span className="font-mono-code text-xs">→</span>
-                        </motion.button>
-
-                        {project.liveUrl && (
-                          <motion.a
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                            href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 bg-white border border-[#E8E6E1] hover:border-[#111111] text-[#111111] text-xs font-semibold rounded-lg transition-colors shadow-2xs min-h-[42px]"
-                          >
-                            <span>Live Site</span>
-                            <ArrowUpRight className="w-3.5 h-3.5 text-[#FF5722]" />
-                          </motion.a>
-                        )}
-
-                        {project.githubUrl && (
-                          <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="min-w-[42px] min-h-[42px] flex items-center justify-center text-[#555555] hover:text-[#111111] bg-[#FAF9F6] border border-[#E8E6E1] rounded-lg transition-colors"
-                            title="View on GitHub"
-                          >
-                            <Github className="w-4 h-4" />
-                          </motion.a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </AnimatePresence>
+                <div className="pt-3 mt-auto border-t border-[#EFECE6]">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#111111] group-hover:text-[#FF5722] transition-colors">
+                    <span>View Project</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </motion.a>
+          ))}
         </div>
+
+        {/* Agency Link Banner */}
+        <motion.a
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          href="https://nextsolutionmym.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-10 sm:mt-12 group flex flex-col sm:flex-row items-center justify-between gap-4 p-5 sm:p-7 bg-[#111111] text-white rounded-2xl hover:bg-[#FF5722] transition-all shadow-lg shadow-black/5"
+        >
+          <div className="space-y-1 text-center sm:text-left">
+            <div className="text-[11px] font-mono-code uppercase tracking-[0.2em] text-[#FF5722] group-hover:text-white/90 font-semibold">
+              Next Solution MYM
+            </div>
+            <div className="text-lg sm:text-xl font-display font-extrabold tracking-tight">
+              Explore more work & full digital services
+            </div>
+            <div className="text-xs text-[#AAAAAA] group-hover:text-white/80 font-mono-code">
+              nextsolutionmym.com
+            </div>
+          </div>
+          <span className="inline-flex items-center gap-2 shrink-0 px-5 py-3 bg-white text-[#111111] rounded-xl text-xs font-semibold group-hover:bg-[#111111] group-hover:text-white transition-colors min-h-[44px]">
+            <span>Visit the Agency</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </span>
+        </motion.a>
       </div>
     </section>
   );

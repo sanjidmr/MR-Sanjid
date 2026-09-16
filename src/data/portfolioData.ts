@@ -12,13 +12,13 @@ export const personalInfo: PersonalInfo = {
   name: 'Sanjid',
   fullName: 'Mushfiqur Rahman Sanjid',
   handle: 'sanjid.dev',
-  role: 'Web Developer & Founder of Next Solution',
+  role: 'Web Developer & Founder of Next Solution MYM',
   title: 'Crafting High-Performance Websites & Digital Products',
-  company: 'Next Solution',
+  company: 'Next Solution MYM',
   companyTagline: 'Digital Solutions for Modern Businesses & Ambitious Brands',
-  companyUrl: 'https://nextsolution.agency',
-  email: 'mrsanjid2007@gmail.com',
-  whatsapp: '+8801700000000', // Editable placeholder phone
+  companyUrl: 'https://nextsolutionmym.com',
+  email: 'mushfiqurrahmansanjid@gmail.com',
+  whatsapp: '+8801955417215',
   location: 'Dhaka, Bangladesh · Remote Worldwide',
   timezone: 'GMT+6 (Available across US/EU/APAC overlap hours)',
   availability: {
@@ -26,11 +26,11 @@ export const personalInfo: PersonalInfo = {
     text: 'Available for selected projects & founder collaborations',
   },
   socials: {
-    github: 'https://github.com',
+    github: 'https://github.com/sanjidmr',
     linkedin: 'https://linkedin.com',
     twitter: 'https://twitter.com',
-    facebook: 'https://facebook.com',
-    whatsapp: 'https://wa.me/8801700000000',
+    facebook: 'https://www.facebook.com/sa.nj.id.566559',
+    whatsapp: 'https://wa.me/8801955417215',
   },
   stats: [
     {
@@ -40,7 +40,7 @@ export const personalInfo: PersonalInfo = {
     },
     {
       label: 'Leadership',
-      value: 'Next Solution',
+      value: 'Next Solution MYM',
       detail: 'Founder & Lead Digital Strategist',
     },
     {
@@ -58,62 +58,61 @@ export const personalInfo: PersonalInfo = {
 
 export const projects: Project[] = [
   {
-    id: 'fashion-hub',
-    slug: 'fashion-hub-ecommerce',
-    title: 'Fashion Hub',
-    category: 'E-Commerce Platform',
-    tagline: 'High-speed apparel shopping experience with instant filtering & responsive checkout',
+    id: 'aurelia',
+    slug: 'aurelia-elegance',
+    title: 'Aurelia',
+    category: 'Premium Beauty & Care Platform',
+    tagline: 'An elegant, conversion-focused brand experience for a premium beauty & care label',
     description:
-      'A bespoke e-commerce frontend built for modern fashion brands. Designed with minimal visual noise, lightning-fast client-side product filtering, fluid drawer carts, and intuitive checkout flow.',
-    role: 'Lead Frontend Developer & UI Designer',
-    year: '2024 – 2025',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'REST API', 'Stripe Integration UI'],
-    liveUrl: 'https://fashion-hub.example.com',
-    githubUrl: 'https://github.com/sanjid/fashion-hub',
+      'Aurelia is a refined brand website built to feel luxurious while staying lightning-fast. Soft editorial typography, immersive product storytelling, and a friction-free user journey across every device.',
+    role: 'Web Development & UI Design',
+    year: '2025',
+    technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Vite'],
+    liveUrl: 'https://aurealia.netlify.app/',
+    image: '/Aurelia.png',
     featured: true,
-    accentColor: '#E65100',
-    thumbnailSvg: 'ecommerce',
+    accentColor: '#B08D57',
+    thumbnailSvg: 'landing',
     caseStudy: {
       overview:
-        'Fashion Hub was conceived as a response to bulky, slow multi-category apparel storefronts. The goal was to build a fluid shopping experience where product browsing, variant selection, and cart modifications happen instantaneously without full-page reloads.',
+        'Aurelia needed a digital presence that matched the elegance of its brand. The goal was a fast, elegant experience that communicates premium quality and converts visitors with confidence.',
       theChallenge:
-        'Most e-commerce templates suffer from heavy third-party script bloat, slow image loading waterfalls, and cumbersome mobile filter drawers that frustrate shoppers and cause cart abandonment.',
+        'Balancing a luxurious, image-heavy aesthetic against the need for instant load times and a fully responsive layout on mobile devices.',
       theApproach:
-        'Engineered a lightweight React architecture prioritizing sub-second interactive states. Designed a persistent slide-over shopping bag with optimistic local updates and multi-facet filtering with zero layout shift.',
+        'Designed a calm, editorial interface with generous whitespace, refined typography, and high-quality imagery — engineered for speed with modern frontend tooling.',
       designHighlights: [
-        'Editorial product grid balancing generous whitespace and high-density product photography.',
-        'Adaptive mobile navigation with gesture-driven swipe sheets for sizing charts and filters.',
-        'Micro-interactions for size selectors, stock badges, and one-tap color switching.',
+        'Refined serif-forward typography paired with a soft neutral palette.',
+        'Immersive product storytelling with smooth scroll reveals.',
+        'Mobile-first layouts that preserve elegance on small screens.',
       ],
       developmentHighlights: [
-        'Implemented memoized client-side search and facet indexing with instant debounce.',
-        'Integrated optimistic cart state with localStorage hydration and smooth count animations.',
-        'Responsive image pipeline with blur-up placeholders and explicit aspect ratios.',
+        'Modern React + Vite build with strict type safety.',
+        'Optimized image pipeline for fast hero and product sections.',
+        'Seamless responsive behaviour across all breakpoints.',
       ],
       technologies: [
-        { name: 'React 18', purpose: 'Component state engine & declarative view layer' },
-        { name: 'TypeScript', purpose: 'Strict data structures for catalog, variants & cart items' },
-        { name: 'Tailwind CSS', purpose: 'Utility-first styling with custom spacing & neutral palette' },
-        { name: 'Motion', purpose: 'Spring-based micro-interactions for drawer & checkout steps' },
+        { name: 'React', purpose: 'Component-driven interactive interface' },
+        { name: 'TypeScript', purpose: 'Type-safe component and data architecture' },
+        { name: 'Tailwind CSS', purpose: 'Custom design tokens and fluid responsive layouts' },
       ],
       keyFeatures: [
         {
-          title: 'Instant Multi-Filter Drawer',
-          description: 'Filter by size, category, price range, and color with zero delay or page jitter.',
+          title: 'Editorial Storytelling',
+          description: 'A visual narrative flow that immerses visitors in the Aurelia brand.',
         },
         {
-          title: 'Optimistic Sliding Cart',
-          description: 'Add, update quantity, and apply coupon codes with instant visual feedback.',
+          title: 'Premium Product Display',
+          description: 'High-fidelity product showcases with elegant presentation.',
         },
         {
-          title: 'Variant & Sizing Matrix',
-          description: 'Dynamic inventory status indicator reflecting real-time stock availability.',
+          title: 'Fully Responsive UI',
+          description: 'Pixel-perfect experience from mobile to ultrawide displays.',
         },
       ],
       outcome:
-        'Delivered a fully responsive, production-ready e-commerce frontend architecture with 98+ Lighthouse performance score and clean modular code suitable for headless backend integrations.',
+        'Delivered a premium, production-ready website that positions Aurelia as an elegant, trustworthy brand with a fast and delightful user experience.',
       whatILearned:
-        'Deepened understanding of optimistic UI patterns and handling complex cart state without relying on oversized third-party e-commerce plugins.',
+        'Refining restraint — how generous whitespace and disciplined typography create perceived luxury without sacrificing performance.',
     },
   },
   {
@@ -121,38 +120,38 @@ export const projects: Project[] = [
     slug: 'laziiz-culinary-experience',
     title: 'Laziiz',
     category: 'Hospitality & Culinary Platform',
-    tagline: 'Atmospheric digital dining experience with interactive digital menu & reservation system',
+    tagline: 'Atmospheric digital dining experience with interactive digital menu & reservation flow',
     description:
-      'A refined web presence for high-end dining. Blends appetizing visual storytelling, interactive dietary-filtered menus, dynamic business hours calculation, and a seamless reservation booking interface.',
-    role: 'Frontend Architect & Visual Strategist',
-    year: '2024',
-    technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Lucide Icons', 'Form Validation'],
-    liveUrl: 'https://laziiz.example.com',
-    githubUrl: 'https://github.com/sanjid/laziiz',
+      'A refined web presence for high-end dining. Blends appetizing visual storytelling, interactive category menus, dynamic business hours, and a seamless reservation interface.',
+    role: 'Web Development & Visual Strategy',
+    year: '2025',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    liveUrl: 'https://lazziiz.netlify.app/',
+    image: '/laziiz.png',
     featured: true,
     accentColor: '#D84315',
     thumbnailSvg: 'restaurant',
     caseStudy: {
       overview:
-        'Laziiz required a web experience that felt as warm, luxurious, and inviting as sitting in the dining room itself. The client wanted to eliminate static PDF menus and replace them with a dynamic, categorized online experience.',
+        'Laziiz required a web experience that felt as warm and inviting as stepping into the dining room. The client wanted to replace static PDF menus with a dynamic, categorized online experience.',
       theChallenge:
-        'Creating an appetizing aesthetic while ensuring fast load times on mobile devices for guests browsing outside or on cellular data. Menu items needed easy categorization with allergen badges.',
+        'Creating an appetizing, luxurious aesthetic while keeping load times fast on mobile for guests browsing on cellular data.',
       theApproach:
-        'Used a clean warm-toned color scheme with tactile typography, category tabs with sticky subheaders, and an interactive reservation inquiry modal with instant validation and time slot selection.',
+        'Used a warm-toned color scheme with tactile typography, category navigation, dietary tags, and an interactive reservation flow with instant validation.',
       designHighlights: [
-        'Refined typography pairing serif display headings with clear geometric sans-serif body copy.',
-        'Interactive allergen and dietary tags (Halal, Vegetarian, Chef Special) with instant filter toggles.',
-        'Real-time opening status indicator calculating current kitchen availability based on local timezone.',
+        'Serif display headings paired with clean geometric body copy.',
+        'Interactive dietary and allergen tags with instant filter toggles.',
+        'Real-time opening status indicator calculated from the local timezone.',
       ],
       developmentHighlights: [
-        'Structured modular menu data in JSON schemas for zero-code price and item updates.',
-        'Lightweight booking stepper with multi-step validation and accessible keyboard navigation.',
-        'Zero layout shifts when switching between Lunch, Dinner, and Beverage categories.',
+        'Structured modular menu data for zero-code price and item updates.',
+        'Multi-step reservation stepper with validation and accessible keyboard navigation.',
+        'Zero layout shifts when switching between menu categories.',
       ],
       technologies: [
-        { name: 'Next.js', purpose: 'Static generation for near-instant edge delivery' },
-        { name: 'Tailwind CSS', purpose: 'Custom warm neutral color scale and micro-borders' },
-        { name: 'TypeScript', purpose: 'Type-safe menu schema, pricing, and reservation validation' },
+        { name: 'React', purpose: 'Dynamic category and reservation interfaces' },
+        { name: 'TypeScript', purpose: 'Type-safe menu schema and reservation validation' },
+        { name: 'Tailwind CSS', purpose: 'Custom warm-neutral color scale and micro-borders' },
       ],
       keyFeatures: [
         {
@@ -160,8 +159,8 @@ export const projects: Project[] = [
           description: 'Filter complex menus by dietary preferences with clean pill toggles.',
         },
         {
-          title: 'Live Table Reservation Stepper',
-          description: 'Select party size, date, time slot, and special requests with client-side verification.',
+          title: 'Live Table Reservation',
+          description: 'Select party size, date, time slot, and requests with client-side verification.',
         },
         {
           title: 'Dynamic Operating Status',
@@ -169,179 +168,183 @@ export const projects: Project[] = [
         },
       ],
       outcome:
-        'Successfully deployed a high-conversion digital presence that increased direct online reservation inquiries and completely replaced slow PDF menus.',
+        'Successfully deployed a high-conversion digital presence that increased direct online reservation inquiries and replaced slow PDF menus.',
       whatILearned:
-        'How purposeful typography and subtle layout hierarchy can elevate a local business to feel like an international Michelin-caliber brand.',
+        'How purposeful typography and subtle layout hierarchy can elevate a local business to feel like an international premium brand.',
     },
   },
   {
-    id: 'next-solution-platform',
-    slug: 'next-solution-agency-platform',
-    title: 'Next Solution',
-    category: 'Digital Agency Platform',
-    tagline: 'Flagship brand & client portal for Next Solution digital solutions company',
+    id: 'medora',
+    slug: 'medora-health-wellness',
+    title: 'Medora',
+    category: 'Health & Wellness Platform',
+    tagline: 'A clean, trustworthy digital home for healthcare & wellness services',
     description:
-      'The primary website and service platform for Next Solution. Designed and built from scratch to showcase the company’s end-to-end capabilities across web development, UI/UX, SEO, and AI automation.',
-    role: 'Founder, Lead Engineer & Designer',
-    year: '2024 – Present',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Vite'],
-    liveUrl: 'https://nextsolution.agency',
-    githubUrl: 'https://github.com/sanjid/next-solution',
+      'Medora is a modern health and wellness website designed around clarity, trust, and ease of use. Calming visuals, structured service information, and a clear path for patients to get the care they need.',
+    role: 'Web Development & UI Design',
+    year: '2025',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    liveUrl: 'https://medorahealthh.netlify.app/',
+    image: '/Medora.png',
     featured: true,
-    accentColor: '#FF5722',
-    thumbnailSvg: 'agency',
-    caseStudy: {
-      overview:
-        'As the founder of Next Solution, I needed a company website that reflected our modern engineering standard and multi-disciplinary services — bridging custom software development with practical digital growth tools.',
-      theChallenge:
-        'Communicating diverse services (from frontend engineering to AI automation and SEO) without looking like a scattered agency or confusing prospective clients.',
-      theApproach:
-        'Created a unified narrative centered on "turning business ideas into digital products". Designed interactive service deep-dives, project showcases, and a transparent discovery workflow.',
-      designHighlights: [
-        'Signature high-contrast dark-and-light balance accented by Next Solution electric orange.',
-        'Modular interactive service grid with expandable deliverables and workflow breakdowns.',
-        'Clean client project intake system with clear project scoping questions.',
-      ],
-      developmentHighlights: [
-        'Built reusable component library shared across client projects to speed up delivery.',
-        'Configured optimized performance budgets with zero dependencies on heavy UI frameworks.',
-        'Integrated automated client inquiry handling with instant confirmation.',
-      ],
-      technologies: [
-        { name: 'TypeScript', purpose: 'Full type safety across client intake and project data' },
-        { name: 'Tailwind CSS', purpose: 'Custom design system with scalable token variables' },
-        { name: 'Motion', purpose: 'Staggered page transitions and viewport-triggered scroll reveals' },
-      ],
-      keyFeatures: [
-        {
-          title: 'Interactive Service Matrix',
-          description: 'Explore full scopes across Web Development, UI/UX, and AI Automation.',
-        },
-        {
-          title: 'Project Estimator / Intake Flow',
-          description: 'Guided discovery tool helping prospective clients clarify requirements.',
-        },
-        {
-          title: 'Case Study Vault',
-          description: 'Structured breakdown of client deliverables and technical outcomes.',
-        },
-      ],
-      outcome:
-        'Serves as the central operational hub for Next Solution, establishing immediate credibility and driving client onboarding for modern web development projects.',
-      whatILearned:
-        'Building your own company platform teaches you how clients evaluate trust, clarity of messaging, and why simplicity consistently outperforms complexity.',
-    },
-  },
-  {
-    id: 'apex-dashboard',
-    slug: 'apex-saas-command-dashboard',
-    title: 'Apex Dashboard',
-    category: 'Web Application & Admin System',
-    tagline: 'High-density metrics, user management & real-time telemetry interface',
-    description:
-      'A modern SaaS command center built for operations and analytics. Features responsive multi-view data tables, live filterable charts, role-based controls, and dark/light adaptive layouts.',
-    role: 'Frontend Architect',
-    year: '2024',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts / SVG', 'Zustand State'],
-    liveUrl: 'https://apex-dashboard.example.com',
-    githubUrl: 'https://github.com/sanjid/apex-dashboard',
-    featured: true,
-    accentColor: '#BF360C',
-    thumbnailSvg: 'dashboard',
-    caseStudy: {
-      overview:
-        'Modern web applications require admin dashboards that remain fast, legible, and easy to navigate even when displaying hundreds of concurrent data points and transactions.',
-      theChallenge:
-        'Complex admin dashboards often suffer from cramped tables, overwhelming clutter, and poor responsiveness on mobile or laptop screens.',
-      theApproach:
-        'Implemented a collapsible sidebar navigation, modular widget architecture, custom accessible data tables with inline sorting, search filtering, and clean visual hierarchy.',
-      designHighlights: [
-        'High-density layout designed according to strict 8pt grid with clear contrast borders.',
-        'Consistent status badges and interactive metric cards with period-over-period comparisons.',
-        'Keyboard shortcuts for search, quick navigation, and panel collapsing.',
-      ],
-      developmentHighlights: [
-        'Client-side data virtualization for lag-free scrolling across multi-row tables.',
-        'Modular widget system enabling easy rearrangement of dashboard panels.',
-        'Pure SVG chart components with accessible tooltip popovers.',
-      ],
-      technologies: [
-        { name: 'React 18', purpose: 'Stateful UI components and virtualized table rows' },
-        { name: 'TypeScript', purpose: 'Strict typing for telemetry models, users, and logs' },
-        { name: 'Tailwind CSS', purpose: 'Dense utility spacing and customizable surface colors' },
-      ],
-      keyFeatures: [
-        {
-          title: 'Multi-Column Filterable Tables',
-          description: 'Instant search, multi-column sorting, and batch row actions.',
-        },
-        {
-          title: 'Custom Metric Visualizers',
-          description: 'Clean time-series graphs and distribution breakdowns without external bloat.',
-        },
-        {
-          title: 'Role-Based Navigation',
-          description: 'Adaptive sidebar rendering based on simulated user permissions.',
-        },
-      ],
-      outcome:
-        'Created a robust, enterprise-grade dashboard boilerplate and frontend pattern library used across Next Solution client web applications.',
-      whatILearned:
-        'Mastered data density management and responsive table UX patterns on smaller screens.',
-    },
-  },
-  {
-    id: 'prism-landing',
-    slug: 'prism-product-landing-page',
-    title: 'Prism Labs',
-    category: 'High-Conversion Landing Page',
-    tagline: 'Technical product showcase engineered for maximum conversion & narrative flow',
-    description:
-      'A modern product landing page for a developer tooling startup. Combines interactive feature demonstrations, animated syntax previews, and clear conversion funnels.',
-    role: 'UI Designer & Frontend Engineer',
-    year: '2024',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'SVG Systems'],
-    liveUrl: 'https://prism-labs.example.com',
-    githubUrl: 'https://github.com/sanjid/prism-landing',
-    featured: false,
-    accentColor: '#FF7043',
+    accentColor: '#0E7C7B',
     thumbnailSvg: 'landing',
     caseStudy: {
       overview:
-        'Prism Labs needed a high-impact launch landing page to explain a technical developer product in less than 30 seconds to visiting engineers and tech founders.',
+        'Medora needed a website that feels calm, professional, and reassuring. The project focused on clear information architecture so visitors instantly understand the services and how to take the next step.',
       theChallenge:
-        'Developer audiences are notoriously skeptical of marketing fluff. The page needed to demonstrate real code, real architecture, and tangible benefits immediately.',
+        'Presenting medical and wellness services in a way that feels approachable rather than clinical, while keeping the site fast and fully responsive.',
       theApproach:
-        'Built an interactive code comparison widget, live architectural flow diagrams, and a friction-free email waitlist signup component.',
+        'Built a clean layout with trustworthy typography, soft color accents, structured service cards, and strong, obvious calls to action for appointments.',
       designHighlights: [
-        'Dark code preview blocks contrasting against clean neutral editorial layout.',
-        'Micro-copy focused purely on developer workflow improvements.',
-        'Sticky CTA banner that seamlessly appears as the visitor reads through the value proposition.',
+        'Calm, health-inspired palette with high contrast and clear hierarchy.',
+        'Well-organized service and department sections.',
+        'Accessible, mobile-first forms and navigation.',
       ],
       developmentHighlights: [
-        'Interactive live code switcher with simulated compilation outputs.',
-        'Zero layout shifts with strict font-display swap strategies.',
-        'Accessible tab controls with full ARIA support.',
+        'Component-based React architecture with strict typing.',
+        'Fast loading and responsive across all device sizes.',
+        'Clean, semantic markup for accessibility and SEO.',
       ],
       technologies: [
-        { name: 'React', purpose: 'Component-driven interactive widgets' },
-        { name: 'TypeScript', purpose: 'Strict props and interaction types' },
-        { name: 'Tailwind CSS', purpose: 'Precise typographic scales and contrast boundaries' },
+        { name: 'React', purpose: 'Structured service and content interface' },
+        { name: 'TypeScript', purpose: 'Type-safe content and form models' },
+        { name: 'Tailwind CSS', purpose: 'Consistent design tokens and responsive utility layouts' },
       ],
       keyFeatures: [
         {
-          title: 'Interactive Code Workbench',
-          description: 'Visitors can toggle between code samples and see simulated execution.',
+          title: 'Clear Service Structure',
+          description: 'Well-organized cards and sections that explain every service at a glance.',
         },
         {
-          title: 'Architecture Stepper',
-          description: 'Visual step-by-step pipeline demonstrating data flow and integrations.',
+          title: 'Appointment-Focused CTAs',
+          description: 'Prominent, friendly calls to action guiding visitors toward booking.',
+        },
+        {
+          title: 'Accessible & Responsive',
+          description: 'A smooth, trustworthy experience on every screen size.',
         },
       ],
       outcome:
-        'Achieved a 100/100 performance score on mobile and established a reusable landing page archetype for fast product launches.',
+        'Delivered a polished, trustworthy web presence that helps Medora build confidence and connect patients with the care they need.',
       whatILearned:
-        'How to translate complex technical capabilities into visual, self-explanatory interactive widgets.',
+        'Empathy-first design — how restrained color, clear structure, and gentle language make healthcare websites feel human and reliable.',
+    },
+  },
+  {
+    id: 'nextbuilder',
+    slug: 'nextbuilder-construction',
+    title: 'NextBuilder',
+    category: 'Construction & Building Services',
+    tagline: 'A bold, credible digital platform for a modern construction & building company',
+    description:
+      'NextBuilder is a construction company website engineered to project strength, reliability, and craftsmanship. Structured project showcases, clear service pillars, and a strong lead-generation flow.',
+    role: 'Web Development & UI Design',
+    year: '2025',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    liveUrl: 'https://nextbuilder.netlify.app/',
+    image: '/nextbuilder.png',
+    featured: true,
+    accentColor: '#B45309',
+    thumbnailSvg: 'landing',
+    caseStudy: {
+      overview:
+        'NextBuilder needed an online presence that reflects industrial strength and dependability. The site showcases completed work, services, and a clear way for potential clients to request a quote.',
+      theChallenge:
+        'Making a heavy, content-rich construction website feel fast and modern while keeping the brand bold and grounded.',
+      theApproach:
+        'Used strong typography, earthy accent colors, structured service cards, and a prominent project showcase with a quoting funnel.',
+      designHighlights: [
+        'Bold, confident headline treatment with high contrast.',
+        'Structured service pillars and project showcase grid.',
+        'Consistent motion and hover states that feel physical and sturdy.',
+      ],
+      developmentHighlights: [
+        'Modular React components with strict type safety.',
+        'Optimized images and lazy-loaded sections for speed.',
+        'Fully responsive layouts from mobile to desktop.',
+      ],
+      technologies: [
+        { name: 'React', purpose: 'Component-driven marketing interface' },
+        { name: 'TypeScript', purpose: 'Type-safe project and service data' },
+        { name: 'Tailwind CSS', purpose: 'Durable design system with custom tokens' },
+      ],
+      keyFeatures: [
+        {
+          title: 'Project Showcase',
+          description: 'A visual gallery that lets visitors see real work at a glance.',
+        },
+        {
+          title: 'Clear Service Pillars',
+          description: 'Every core service explained with its own dedicated focus.',
+        },
+        {
+          title: 'Quote-Focused CTAs',
+          description: 'Strong, repeated pathways that convert visitors into leads.',
+        },
+      ],
+      outcome:
+        'Produced a fast, credible website that gives NextBuilder a commanding digital presence and drives qualified inquiry.',
+      whatILearned:
+        'Designing for trust-heavy industries — how structure, imagery, and tone can project reliability before a single conversation begins.',
+    },
+  },
+  {
+    id: 'strangervibe',
+    slug: 'strangervibe-lifestyle',
+    title: 'StrangerVibe',
+    category: 'Lifestyle & Brand Storefront',
+    tagline: 'A bold, mood-driven lifestyle brand experience with instant shop & explore flow',
+    description:
+      'StrangerVibe is a lifestyle brand site with an unmistakable attitude. Dark, expressive visuals, high-energy product showcases, and a shopping experience built for speed and impact.',
+    role: 'Web Development & UI Design',
+    year: '2025',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    liveUrl: 'https://strangervibe.netlify.app/',
+    image: '/strangervibe.png',
+    featured: true,
+    accentColor: '#7C3AED',
+    thumbnailSvg: 'ecommerce',
+    caseStudy: {
+      overview:
+        'StrangerVibe needed a digital storefront with serious personality. The mission was to translate a loud, expressive streetwear aesthetic into a fast, functional web experience that excites and converts.',
+      theChallenge:
+        'Protecting the brand dark, high-energy style while keeping the experience intuitive, accessible, and quick on mobile shopping sessions.',
+      theApproach:
+        'Built a bold dark-themed interface with neon accents, immersive product grids, and a streamlined browse-to-cart flow tuned for mobile-first shoppers.',
+      designHighlights: [
+        'High-contrast dark canvas with vibrant signature accents.',
+        'Editorial product grids with strong visual rhythm.',
+        'Animated micro-interactions that match the brand energy.',
+      ],
+      developmentHighlights: [
+        'Lean React architecture with no heavy UI dependencies.',
+        'Explicit image aspect ratios to eliminate layout shift.',
+        'Fully responsive product and cart experience.',
+      ],
+      technologies: [
+        { name: 'React', purpose: 'Immersive product and catalog UI' },
+        { name: 'TypeScript', purpose: 'Type-safe product and cart models' },
+        { name: 'Tailwind CSS', purpose: 'Custom dark theme and design tokens' },
+      ],
+      keyFeatures: [
+        {
+          title: 'Immersive Product Grids',
+          description: 'High-energy catalog layouts built for visual impact.',
+        },
+        {
+          title: 'Fast Mobile Shopping',
+          description: 'Streamlined browse-to-cart flow tuned for small screens.',
+        },
+        {
+          title: 'Bold Brand Attitude',
+          description: 'Motion and color systems that broadcast the StrangerVibe identity.',
+        },
+      ],
+      outcome:
+        'Shipped a standout lifestyle storefront that matches the fearless StrangerVibe identity while delivering a smooth, fast shopping experience.',
+      whatILearned:
+        'Channelling raw personality into interfaces — how dark themes, bold color, and confident motion create brand experiences shoppers remember.',
     },
   },
 ];
@@ -388,14 +391,13 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     id: 'systems-growth',
-    title: 'Systems, SEO & AI Solutions',
-    description: 'Holistic product delivery combining design fidelity, search visibility, and AI automation.',
+    title: 'Systems, SEO & Performance',
+    description: 'Holistic web delivery combining design fidelity, search visibility, and speed optimization.',
     skills: [
       { name: 'UI / UX Design', level: 'Advanced', highlight: 'Information Hierarchy, User Flows, Typography' },
       { name: 'Performance Optimization', level: 'Advanced', highlight: 'Core Web Vitals, Bundle Splitting, Image Pipeline' },
       { name: 'Technical SEO', level: 'Advanced', highlight: 'Structured Data, Meta Graph, Sitemap, Canonical' },
       { name: 'Responsive Web Design', level: 'Core', highlight: 'Mobile-first, Tablet, Ultrawide Fluidity' },
-      { name: 'AI Integration & Agents', level: 'Proficient', highlight: 'LLM APIs, Prompt Workflows, Automation Pipelines' },
     ],
   },
 ];
@@ -435,35 +437,19 @@ export const services: ServiceItem[] = [
   },
   {
     number: '05',
-    title: 'Web Applications & Portals',
+    title: 'Business & Brand Websites',
     description:
-      'Interactive SaaS frontends, client portals, and web tools with complex state handling, responsive data grids, and auth.',
-    deliverables: ['Role-Based Views', 'Real-time Updates', 'State Architecture', 'Interactive Workflows'],
-    technologies: ['React', 'TypeScript', 'Supabase', 'Node.js'],
+      'Polished, modern websites for businesses and brands — clear messaging, strong visual identity, and fast, responsive experiences.',
+    deliverables: ['Brand-Focused Design', 'Service & Product Pages', 'Blog / Content Templates', 'Contact & Lead Flows'],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
   },
   {
     number: '06',
-    title: 'Dashboards & Admin Systems',
-    description:
-      'Clean, high-density analytics dashboards and operational consoles that make complex metrics effortless to understand.',
-    deliverables: ['Interactive Charting', 'Filterable Data Tables', 'Activity Feeds', 'Export & Batch Actions'],
-    technologies: ['React', 'Tailwind CSS', 'SVG Charts'],
-  },
-  {
-    number: '07',
     title: 'Website Optimization & SEO',
     description:
       'Auditing and transforming slow, cluttered sites into high-ranking, 95+ Core Web Vitals digital powerhouses.',
     deliverables: ['Core Web Vitals Audit', 'Bundle Size Reduction', 'Technical SEO Schema', 'Asset & Font Pipeline'],
     technologies: ['Lighthouse', 'Schema.org', 'Web Performance'],
-  },
-  {
-    number: '08',
-    title: 'AI Integration & Automation',
-    description:
-      'Empowering modern businesses with smart AI workflows, conversational bots, and automated digital processes through Next Solution.',
-    deliverables: ['LLM API Integrations', 'Custom AI Agents', 'Workflow Automation', 'Smart Content Assistants'],
-    technologies: ['Gemini / OpenAI APIs', 'Automations', 'Next Solution AI'],
   },
 ];
 
@@ -498,19 +484,19 @@ export const timeline: TimelineItem[] = [
   {
     year: '2024',
     period: 'Entrepreneurship',
-    title: 'Founded Next Solution',
+    title: 'Founded Next Solution MYM',
     subtitle: 'Starting a Digital Solutions Company',
     description:
-      'Launched Next Solution with a mission to help ambitious businesses and founders build reliable digital products, websites, branding, and automation systems.',
-    tags: ['Next Solution', 'Client Strategy', 'Product Scoping', 'Agency Leadership'],
+      'Launched Next Solution MYM with a mission to help ambitious businesses and founders build reliable web applications, websites, and digital experiences.',
+    tags: ['Next Solution MYM', 'Client Strategy', 'Product Scoping', 'Agency Leadership'],
   },
   {
     year: 'Present',
     period: 'Active Execution',
     title: 'Web Developer & Founder',
-    subtitle: 'Building Products, Serving Clients & Expanding Next Solution',
+    subtitle: 'Building Products, Serving Clients & Growing Next Solution MYM',
     description:
-      'Actively developing client projects, refining digital experiences, building in public, and growing Next Solution into a dependable digital agency.',
+      'Actively developing client projects, refining digital experiences, building in public, and growing Next Solution MYM into a dependable digital agency.',
     tags: ['Full-Stack UI', 'Founder', 'Client Delivery', 'Continuous Growth'],
     isCurrent: true,
   },
@@ -582,7 +568,7 @@ export const blogPosts: BlogPost[] = [
       'The internet is currently flooded with generic, low-effort landing pages that all share the exact same aesthetic: glowing purple blobs, generic copy, and cluttered card grids with no hierarchy.',
       'As a developer and founder, I have learned that clients do not pay for lines of code or shiny templates — they pay for outcomes: clarity, trust, conversion, and reliability.',
       'True digital craftsmanship comes down to mathematical spacing, typographic hierarchy, sub-second performance, and understanding why a customer buys. When you strip away the gimmicks, what remains is the pure power of well-structured information.',
-      'At Next Solution, we approach every build by asking: What is the single most important action a visitor needs to take on this screen? Every element that does not support that action is removed.',
+      'At Next Solution MYM, we approach every build by asking: What is the single most important action a visitor needs to take on this screen? Every element that does not support that action is removed.',
     ],
     keyTakeaways: [
       'Simplicity and contrast outperform flashy gimmicks every time.',
@@ -602,7 +588,7 @@ export const blogPosts: BlogPost[] = [
       'Every npm package you install is a liability for bundle size and long-term maintenance. Here is the blueprint I follow to achieve 98+ Lighthouse scores on every production build.',
     content: [
       'It has become standard practice in modern web development to install heavy component libraries and animation suites for simple interactions that can be achieved with pure CSS or minimal JavaScript.',
-      'When building applications like Fashion Hub or Apex Dashboard, keeping the initial bundle under 120KB was paramount. This required leaning on native browser APIs, CSS grid, and selective lazy loading.',
+      'When building applications for clients, keeping the initial bundle small was paramount. This required leaning on native browser APIs, CSS grid, and selective lazy loading.',
       'By defining strict design tokens with Tailwind CSS and utilizing React 18 concurrent transitions where necessary, we get both instant interactions and zero layout shift.',
       'Performance is not a final checklist item — it is an architectural mindset that begins during wireframing.',
     ],
@@ -615,21 +601,21 @@ export const blogPosts: BlogPost[] = [
   {
     id: 'building-next-solution',
     slug: 'solo-coder-to-agency-founder',
-    title: 'From Solo Developer to Agency Founder: The Next Solution Story',
+    title: 'From Solo Developer to Agency Founder: The Next Solution MYM Story',
     subtitle: 'What I discovered about business, client trust, and delivering full digital solutions.',
     date: 'December 2024',
     readTime: '4 min read',
     category: 'Founder Story',
     excerpt:
-      'Starting Next Solution was born from a simple observation: businesses do not want fragmented freelancers — they want a dedicated partner who can solve the entire digital puzzle.',
+      'Starting Next Solution MYM was born from a simple observation: businesses do not want fragmented freelancers — they want a dedicated partner who can solve the entire digital puzzle.',
     content: [
       'When I began building websites, I thought my job began and ended with HTML, CSS, and React. But as I worked with real clients, I noticed a consistent frustration: they had a designer who did not understand code, a developer who did not care about aesthetics, and a marketer who did not understand SEO.',
-      'I started Next Solution to bridge those gaps. By bringing together web development, UI/UX, SEO, and AI automation under one cohesive vision, we provide businesses with a unified digital engine.',
+      'I started Next Solution MYM to bridge those gaps. By bringing together web development, UI/UX, and SEO under one cohesive vision, we provide businesses with a unified digital engine.',
       'Being a young founder is about relentless curiosity, extreme accountability, and letting the work speak louder than any marketing pitch.',
     ],
     keyTakeaways: [
       'Clients value ownership and clear communication as much as technical skill.',
-      'Next Solution was built to turn raw business ideas into finished digital products.',
+      'Next Solution MYM was built to turn raw business ideas into finished digital products.',
       'Consistency and honesty build longer-lasting partnerships than exaggerated promises.',
     ],
   },
@@ -642,14 +628,14 @@ export const testimonials: Testimonial[] = [
       'Sanjid took our rough concept and turned it into an incredibly sharp, fast web presence. His attention to detail on mobile layouts and typography is on par with senior agency leads.',
     author: 'Founder & Director',
     role: 'Client Review',
-    company: 'Next Solution Client Project',
+    company: 'Next Solution MYM Client Project',
     projectType: 'Web Development & UI/UX',
     isPlaceholder: false,
   },
   {
     id: 'testimonial-2',
     quote:
-      'Working with Sanjid and the Next Solution team gave us a seamless digital product. Everything from initial planning to final deployment was transparent and punctual.',
+      'Working with Sanjid and the Next Solution MYM team gave us a seamless digital product. Everything from initial planning to final deployment was transparent and punctual.',
     author: 'Brand Lead',
     role: 'E-commerce Client',
     company: 'Retail Brand Partner',

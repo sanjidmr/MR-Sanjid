@@ -53,7 +53,7 @@ export default function App() {
         <Hero />
         <AboutSection />
         <FounderSection />
-        <ProjectsSection onOpenCaseStudy={(project) => setSelectedCaseStudy(project)} />
+        <ProjectsSection />
         <SkillsSection />
         <ServicesSection onSelectService={handleServiceSelect} />
         <JourneySection />
